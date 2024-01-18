@@ -1,0 +1,52 @@
+{
+    "name": "𝗦𝗢𝗨𝗥𝗖𝗘𝗔𝗟𝗕𝗥𝗔𝗡𝗦",
+    "description": "اهلا بكم في تنصيب 𝗦𝗢𝗨𝗥𝗖𝗘𝗔𝗟𝗕𝗥𝗔𝗡𝗦  تجميع النقاط",
+    "logo": "https://telegra.ph/file/dceca382423da11b0d0b1.jpg",
+    "stack": "container",
+    "repository": "https://t.me/dev_albrans",
+    "keywords": ["python", "chatbot", "telegrambot"],
+    "website": "https://t.me/dev_albrans",
+    "env": {
+        "APP_ID": {
+            "description": "الايـبـي ايــدي",
+            "value": "",
+            "required": true
+        },
+        "DEVLO": {
+            "description": "ايــدي حـسابـك",
+            "value": "6534175982",
+            "required": true
+        },
+        "APP_HASH": {
+            "description": "الايـبـي هــاش",
+            "value": "",
+            "required": true
+        },
+        "TERMUX": {
+            "description": "كــود تيرمــكس",
+            "value": "",
+            "required": true
+        },
+        "TG_BOT_USERNAME": {
+            "description": "هنـا ضـع معـرف بـوتـك بـدون @",
+            "value": "",
+            "required": true
+        },
+        "TG_BOT_TOKEN": {
+            "description": "هنـا ضـع تـوكـن بـوتـك  الـي صـنعـته",
+            "value": "",
+            "required": true
+        }
+    },
+    "buildpacks": [
+        {
+            "url": "https://github.com/heroku/heroku-buildpack-apt.git"
+        },
+        {
+            "url": "https://github.com/chrismytton/heroku-buildpack-jq"
+        },
+        {
+            "url": "heroku/python"
+        }
+    ]
+}
